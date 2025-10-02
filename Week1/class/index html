@@ -1,0 +1,25 @@
+
+<!--DOCTYPE tells the browser that this is an html document and it to read it as such-->
+<!DOCTYPE html>
+
+<!--the html tag with the languare keyword-->
+<html lang="en">
+
+<!--contains the title, gets read first by the bowser-->
+<head>
+
+<meta charset="UTF-8">  
+
+<!--using the browsers view port and setting everything to it's native size-->
+<meta name ="viewport" content="width=device-with, initial-scale=1.0">
+<title>webpage name</title>
+</head>
+
+<body>
+    <h1>Welcome to SE111</h1>
+    <h2>Smaller text</h2>
+    
+</body>
+
+
+</html>
