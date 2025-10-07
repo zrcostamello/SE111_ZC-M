@@ -1,0 +1,7 @@
+.eggs{
+    border: 0px solid white;
+}
+
+.eggs:hover{
+    border: 2px soild greenyellow;
+}
