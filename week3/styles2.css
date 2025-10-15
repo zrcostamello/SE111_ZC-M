@@ -1,0 +1,115 @@
+h1{
+    font-family: "Trade Winds", system-ui;
+    
+    font-size: 50px;
+    text-align: center
+
+
+}
+
+
+#headervidegames{
+    border: 20px dotted green;
+
+}
+
+#content{
+    
+    border: solid 25px rgb(19, 152, 10);
+    margin: auto;
+    text-align: center;
+    float: left;
+}
+
+
+body{
+    display:flex;
+    justify-content: center;
+    background-image:radial-gradient(circle, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+
+}
+
+#main{
+    border: 1px solid black;
+    width: 1000px;
+    height: 800px;
+    background: linear-gradient(90deg,rgba(27, 168, 159, 1) 0%, rgba(121, 9, 35, 1) 46%, rgba(0, 212, 255, 1) 100%);
+
+}
+
+h1:hover{
+    animation-name: touchSpin;
+        animation-duration: 2s;
+}
+
+#header{
+    height: 130px;
+    border: 5px solid black;
+}
+
+
+#nav{
+    font-family: "Rubik Glitch", system-ui;
+    font-size: 30px;
+    text-align: center
+
+}
+
+
+.nav-btn{
+    border: 2px solid black;
+    padding: 4px
+
+}
+
+.nav-btn:hover{
+        font-size: 35px;
+        color: blueviolet;
+        text-decoration: overline;
+
+}
+
+.nav-btn{
+    animation-name: touchSpin;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+
+#lore{
+    font-family: "Jolly Lodger";
+    color: paleturquoise;
+}
+
+
+#robots{
+    height: 300px;
+    animation-name:bigSpin;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+
+
+}
+
+@keyframes bigSpin
+{
+    from{
+        border:1px solid brown;
+        height:100px;
+    }
+    to{
+        color: maroon;
+    }
+
+}
+
+@keyframes touchSpin
+{
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform:rotate(360deg);
+    }
+
+}

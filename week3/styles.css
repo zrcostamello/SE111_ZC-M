@@ -1,0 +1,79 @@
+h1{
+    font-family: "Rationale", system-ui;
+    font-size: 50px;
+    text-align: center
+
+
+}
+
+
+#headervidegames{
+    border: 20px dotted green;
+
+}
+
+#content{
+    height:470px;
+    width:650px;
+    text-align: center;
+    float: left;
+}
+
+
+body{
+    display:flex;
+    justify-content: center;
+    background-image:radial-gradient(circle, rgba(19, 123, 100, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+
+}
+
+#main{
+    border: 1px solid black;
+    width: 1000px;
+    height: 800px;
+    background-color: burlywood;
+
+}
+
+#header{
+    height: 130px;
+    border: 5px solid black;
+}
+
+
+#nav{
+    font-family: "UnifrakturMaguntia", system-ui;
+    font-size: 40px;
+    text-align: center
+
+}
+
+
+.nav-btn{
+    border: 2px solid black;
+    padding: 4px
+
+}
+
+.nav-btn:hover{
+        font-size: 30px;
+        color: blueviolet;
+        text-decoration: overline;
+}
+
+.nav-btn:visited{
+    text-decoration: line-through;
+    color: greenyellow;
+}
+
+
+@keyframes bigSpin
+{
+    from{
+        border:3px solid brown
+    }
+    to{
+        border:10px solid black
+    }
+
+}
