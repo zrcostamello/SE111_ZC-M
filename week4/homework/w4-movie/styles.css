@@ -8,5 +8,12 @@
 h1{
     font-family: "Comic Relief", system-ui;
     font-size: 28px;
-    text-align: center
+    text-align:center
 }
+
+.nav-btn:hover{
+    font-size: 30px;
+    color: blueviolet;
+    text-decoration: overline;
+}
+
