@@ -6,7 +6,7 @@
 }
 
 h1{
-    font-family: "Comic Relief", system-ui;
+    font-family: "Oswald", system-ui;
     font-size: 28px;
     text-align:center
 }
@@ -15,5 +15,11 @@ h1{
     font-size: 30px;
     color: blueviolet;
     text-decoration: overline;
+}
+
+h2{
+    font-family: "Comic Relief";
+    font-size: 28px;
+    text-align: center;
 }
 
