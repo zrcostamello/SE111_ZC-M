@@ -13,7 +13,7 @@ h1{
 
 .nav-btn:hover{
     font-size: 30px;
-    color: blueviolet;
+    color: darkgreen;
     text-decoration: overline;
 }
 
@@ -23,3 +23,78 @@ h2{
     text-align: center;
 }
 
+.bridge-character {
+    text-align: center;
+
+    background-image:radial-gradient(circle, rgb(0, 123, 0) 0%, rgba(101, 67, 33) 50%, rgba(93, 151, 231) 100%);
+
+}
+
+.story-character{
+    text-align: center;
+
+    background-image:radial-gradient(circle, rgb(0, 123, 0) 0%, rgba(101, 67, 33) 50%, rgba(93, 151, 231) 100%);
+}
+
+
+#story-image {
+  display: inline-block;
+  transition: transform 0.3s;
+}
+
+#story-image:hover {
+  animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0) scale(1); }
+  30%      { transform: translateY(-15px) scale(1.05); }
+  50%      { transform: translateY(0) scale(0.95); }
+  70%      { transform: translateY(-8px) scale(1.02); }
+}
+
+
+#bridge-image {
+  display: inline-block;
+  position: relative; 
+}
+
+
+#bridge-image:hover {
+  animation: slide-and-fall 3s forwards;
+  animation-fill-mode: none; 
+}
+
+
+@keyframes slide-and-fall {
+  0% {
+    left: 0;
+    top: 0;
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  50% {
+    left: 80%;
+    top: 0;
+    transform: rotate(5deg);
+  }
+  75% {
+    left: 80%;
+    top: 150px; 
+    transform: rotate(25deg);
+  }
+  100% {
+    left: 80%;
+    top: 500px; 
+    transform: rotate(90deg);
+    opacity: 0;    
+  }
+}
+
+iframe { 
+    border: 0; 
+}
+
+.class-image{
+    height: "50";
+}
