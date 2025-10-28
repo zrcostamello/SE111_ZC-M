@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Zachary Costa-Mello">
+    <meta name="description" content="week 5 in class">
+
+
+    <link rel="stylesheet" href="./style.css">
+
+    <title></title>
+</head>
+
+<body>
+
+    <h1>Week 5 tables and forms</h1>
+
+    <style>
+
+        table,tr,th,td{
+            border: 1px solid black;
+        }
+
+        tr:nth-child(even){
+            background-color: aquamarine;
+        }
+
+    </style>
+    <h2>Table Example</h2>
+    <!--start of table-->
+    <table>
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Program</th>
+                <th>Age</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Zachary</td>
+                <td>Costa-Mello</td>
+                <td>Student</td>
+                <td><form action="#" method="post"></form>
+                    <input type="text" name="age" placeholder="Enter Age.....">
+                </td>
+            </tr>
+            <tr>
+                <td>Aava</td>
+                <td>Costa-Mello</td>
+                <td>Cat</td>
+                <td><form action="#" method="post"></form>
+                    <input type="text" name="age" placeholder="Enter Age.....">
+                </td>
+            </tr>
+            <tr>
+                <td>Saphira</td>
+                <td>Costa-Mello</td>
+                <td>Snake</td>
+                <td><form action="#" method="post"></form>
+                    <input type="text" name="age" placeholder="Enter Age.....">
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <h2>Basic Form Example</h2>
+    <form action="#" method="post">
+        <label for="username">User Name</label>
+        <br>
+        <input type="text" name="username" placeholder="Enter Username....">
+        <br><br>
+        <label for="password">Password</label>
+        <br>
+        <input type="text" name="password" placeholder="Enter Password....">
+        <br><br>
+    </form>
+    
+    
+        <!--<table> This is no good
+            <thead>
+                <tr>
+                    <td>
+                        <form action="#" method="post">
+                            <label for="age">Age</label>
+                            <br>
+                            <input type="text" name="age" placeholder="Enter Age.....">
+                        </form>
+                    </td>
+                </tr>
+            </thead>
+        </table>-->
+
+    <form action="#" method="get">
+        <table>
+            <thead>
+                <tr>
+                    <th>Lable</th>
+                    <th>Input</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Text Input</td>
+                    <td><input type="text" name="textINput" required></td>
+                </tr>
+                <tr>
+                    <td>Color Input</td>
+                    <td><input type="color"></td>
+                    
+                </tr>
+                <tr>
+                    <td>Date Input</td>
+                    <td><input type="date"></td>
+                    
+                </tr>
+                <tr>
+                    <td>File Input</td>
+                    <td><input type="file"></td>
+                    
+                </tr>
+
+                </tr>
+            </tbody>
+        </table>
+    </form>
+    
+</body>
+
+
+</html>

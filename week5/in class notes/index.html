@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Zachary Costa-Mello">
+    <meta name="description" content="week 5 in class">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./styles.css">
+
+    <title></title>
+</head>
+
+<table> <!--how to make a table the long way-->
+    <thead>
+        Data Table
+        <tr>
+            <td>
+                Month
+            </td>
+            <td>
+                Savings
+            </td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                Jan
+            </td>
+            <td>
+                $100
+            </td>
+        </tr>
+        <tr>
+            <td>
+                March
+            </td>
+            <td>
+                $200
+            </td>
+        </tr>
+    </tbody>
+    <tfoot>
+        the footer for a table(not in the right spot for some reason)
+    </tfoot>
+
+<!--Form- Gathers data from user, has name and id, can give both ane and id the same lable ex: name= "login", id= "login"
+
+
+
+Method, the method in which data is sent
+
+Action, Link to script or another page-->
+
+<form>
+    <label for="first-name">First Name</label>
+    <input type="text" name="first-name">
+    <input type="text" name="lastName" required>
+
+    <input type="checkbox" value="true">
+    <input type="checkbox" value="false">
+</form>
+
+<!--forms use a method and an action gets triggered when you hit submit 
+
+Post- sends data via network packages
+
+Get- retrieves data-->
+
+<form method="post" action="queryurl.js"></form>
+<form method="get"></form>
+<form method=""
