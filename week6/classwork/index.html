@@ -107,15 +107,17 @@
         var numberString = "1548955498465784352"
         var conversion = Number(numberString)
         var backConversion = String(conversion)
-
+        console.log(conversion)
 
         // check what type somethign is
         if(typeof conversion === 'string')
             console.log(true)
 
+            console.log("My favorite show is " + name + num)
 
-
-
+        // string literal
+        var tvShow = `Hi I really like ${name} ${num}`;
+        console.log(tvShow)
 
 
 
