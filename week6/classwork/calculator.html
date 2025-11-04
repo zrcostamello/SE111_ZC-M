@@ -11,7 +11,7 @@
 
     <script>
         
-        var choice = prompt("For Addition: 1 , For Multiplacation: 2")
+        var choice = prompt("For Addition: 1 , For Multiplacation: 2 , For Subtraction: 3 , For Division 4")
 
         if (choice == 1) {
             function add() {
@@ -39,8 +39,29 @@
             // console.log(mult());
         }
 
+        if (choice == 3) {
+            function sub() {
+                var numOne = Number(prompt("Enter first number."))
+                var numTwo = Number(prompt("Enter second number."))
 
+                return numOne - numTwo;
+            }
+            alert("Your answer is " + sub())
 
+        }
+
+        if (choice == 4) {
+            function adiv() {
+                var numOne = Number(prompt("Enter first number."))
+                var numTwo = Number(prompt("Enter second number."))
+
+                return numOne / numTwo;
+            }
+            alert("Your answer is " + adiv())
+
+        }
+
+        else alert("Error bad selection!")
 
 
 
