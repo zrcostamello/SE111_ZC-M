@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>In class Lab</title>
+</head>
+
+<body>
+
+    <script>
+        
+        var choice = prompt("For Addition: 1 , For Multiplacation: 2")
+
+        if (choice == 1) {
+            function add() {
+                var numOne = Number(prompt("Enter first number."))
+                var numTwo = Number(prompt("Enter second number."))
+                // var numOneC = Number(numOne)
+                // var numTwoC = Number(numTwo)
+                // return numOneC + numTwoC;
+                return numOne + numTwo;
+            }
+            alert("Your answer is " + add())
+            // console.log(add());
+        }
+
+        if (choice == 2) {
+            function mult() {
+                var numOne = prompt("Enter first number.")
+                var numTwo = prompt("Enter second number.")
+                var numOneC = Number(numOne)
+                var numTwoC = Number(numTwo)
+                return numOneC * numTwoC;
+            }
+
+            alert("Your answer is " + mult())
+            // console.log(mult());
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
