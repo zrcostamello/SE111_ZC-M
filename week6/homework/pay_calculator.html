@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>In class Lab</title>
+</head>
+
+<body>
+
+    <script>
+
+        var numOne = Number(prompt("Enter hourly pay."))
+        var numTwo = Number(prompt("Enter hours worked in this pay cycle."))
+        var tax = Number(prompt("Please enter tax rate."))
+
+        var gross = numOne * numTwo
+        var taxTake = gross * tax
+        var net = gross - taxTake
+
+        console.log("Gross Pay: $" + gross);
+        console.log("Uncle Sam's Share: $" + taxTake);
+        console.log("Net Pay: $" + net);
+
+        document.write("Your Gross pay is $" + gross.toFixed(2));
+        document.write("Uncle Sam's Share: $" + taxTake.toFixed(2));
+        document.write("Net Pay: $" + net.toFixed(2));
+
+    </script>
+</body>
