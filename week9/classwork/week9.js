@@ -60,3 +60,11 @@ for(var i = 0; i < names.length; i++)
 }
 
 
+//Query selection \ advanced
+
+var advanceDiv = document.getElementById("advanced")
+
+//get the children
+console.log(document.querySelector("#advanced h2").innerText)
+
+console.log(document.querySelector("#advanced h2 p").innerText)
