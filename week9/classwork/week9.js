@@ -48,3 +48,15 @@ function bf()
 
 //Button that Executes order 66
 document.getElementById('order66').addEventListener('click',bf)
+
+//get all elements with the names tag
+
+var names = document.querySelectorAll('.names')
+
+for(var i = 0; i < names.length; i++)
+{
+    console.log(names[i].innerText)
+    names[i].style.color = "blanchedalmond"
+}
+
+
