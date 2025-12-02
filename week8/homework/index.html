@@ -38,7 +38,7 @@
 		//Store the elements (tags) in variables
 		var firstInput = document.getElementById("first");
 		var lastInput = document.getElementById("last");
-
+		var outputDiv = document.getElementById("output")
 		//Make an array to store the people
 		var people = []
 
@@ -69,15 +69,15 @@
 
             var person = {
 
-
-
-            }//end of person object
-
+				name: firstInput.value,
+				last: lastInput.value
+            }
+			//end of person object
 
 
 
 			//Add the person object into the people array by using the .push() array method.
-			
+			people.push(person)
 
 			//Bubble sort people on the last name
 			for(let i=0; i < people.length-1; i++)
@@ -94,36 +94,45 @@
 			}//end of bubble sort algorithm!
 
 			//console.log the people array to check that the people array is formatted correctly and is populated with the correct objects
-			
+			console.log(people)
 
 			//create a variable called 'output' that has an empty string value stored to 
-			
+			var output = ""
 
 			//Loop through the objects in the people array
-			for()
+			for(let i = 0; i < people.length; i++)
             {
+				
+				//[]
+				// Joel Hanson - 0
+				// Zack Costa-Mello - 1
 
 				//Loop through each property in the object
 				for(key in people[i])
                 {
+					
+					
 					//The output should use the key set to uppercase using the .toUpperCase() String method as a title and the value of the key.
 					//Output will resemble:
 					//FIRST: Ivan
 					//LAST: Drago
-				
+					output += key.toUpperCase()  + ":" + people[i][key] + "<br>";
+
 
                 }
+				console.log(output) 	
                 //add a <hr> to the output at the end of this outter loop so a horizontal rule is displayed inbetween each person being displayed to the screen.
 				
 
-
-			}//end of loop going through people array to edit 'output'
+				output += "<hr>"
+			}
+			//end of loop going through people array to edit 'output'
 
 				//log the output string
 				//replace the outputDiv's inner HTML with the output string
 				
 
-
+			outputDiv.innerHTML = output;
 
 		}
 	
