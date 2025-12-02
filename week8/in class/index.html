@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript Lab</title>
+</head>
+
+<body>
+    <!--  -->
+
+    <div id="query">
+        <input type="button" id="submit" value="Submit">
+    </div>
+
+    <script>
+
+
+
+        var test = 65;
+        var hello = "Hello"
+
+        var foo = 5
+        var foo = "Hello"
+
+        console.log(foo)
+
+        //KeyValue Pair
+        var car = {
+            make: "Honda",
+            model: "CRV",
+            year: 1995,
+            wheels: 4
+        }
+
+        var car2 = {
+            make: "Dodge",
+            model: "Hellcat",
+            year: 2022,
+            wheels: 4
+        }
+
+        console.log(car.make);
+        console.log(car2.make);
+
+        function IAmLosingMyMind(paramOne) {
+            console.log(paramOne);
+        }
+
+        IAmLosingMyMind(car2);
+
+        
+        var fruits = [
+            "Banana",
+            "Apple",
+            "Orange",
+            "Pomegranate",
+            "Tomato"
+        ]
+
+        IAmLosingMyMind(fruits[1])
+
+        var twodarray = [
+            [0,0,6,0,7],
+            [0,0,4,0,0],
+            [0,5,0,30,0],
+            [0,1,0,10,10],
+        ]
+
+var mapString = ""
+        //Looping through the initial array
+        for(let i = 0; i<twodarray.length; i ++){
+            //Looping through each element in the array object
+            for(let j = 0; j <twodarray[i].length; j++){
+                //Adding the index to a string
+                mapString += twodarray[i][j]
+            }
+            mapString += "\n";
+        }
+        
+
+        console.log(mapString)
+var marioL1 = [
+  [` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `],
+  [` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `],
+  [` `,` `,` `,` `,` `,` `,` `,` `,`C`,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `],
+  [` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,`C`,`C`,`C`],
+  [` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,`Q`,` `,` `,` `,` `,` `,` `,` `,` `,` `],
+  [` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `],
+  [` `,` `,` `,` `,` `,` `,` `,` `,`I`,` `,` `,`T`,` `,` `,` `,` `,` `,` `,` `,` `],
+  [` `,` `,` `,` `,`Q`,` `,` `,` `,`B`,`X`,`B`,`Q`,`B`,` `,` `,` `,` `,` `,` `,` `],
+  [` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `],
+  [` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,` `,`q`,`p`,` `,` `],
+  [`x`,`x`,`x`,`x`,`M`,`M`,`M`,` `,` `,`G`,` `,`x`,`x`,`x`,` `,` `,`l`,`l`,` `,` `],
+  [`H`,`H`,`H`,`H`,`H`,`H`,`H`,`H`,`H`,`H`,`H`,`H`,`H`,`H`,`H`,`H`,`H`,`H`,`H`,`H`],
+  [`H`,`H`,`H`,`H`,`H`,`H`,`H`,`H`,`H`,`H`,`H`,`H`,`H`,`H`,`H`,`H`,`H`,`H`,`H`,`H`]
+]
+
+
+        for (let i=0; i<marioL1.length; i++)
+        {
+            for (let j=0; j<marioL1[i].length; j++)
+        {
+            console.log(marioL1[i][j])
+        }
+    }
+
+        IAmLosingMyMind(marioL1[10][9])
+
+
+        
+        
+
+
+
+
+
+        for(let i = 0; i < fruits.length; i++)
+        {
+           console.log(fruits[i])
+        }
+
+
+    </script>
+
+</body>
+
+</html>
