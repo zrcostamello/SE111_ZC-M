@@ -1,41 +1,41 @@
-
-
+//Getting the food image tag
 var foodImage = document.getElementById("food")
 
+//Getting the button
 var foodButton = document.getElementById("foodButton")
 
+//Creating a method that changes the src of the image
 function changeImage() {
-console.log(foodImage.src)
-foodImage.src = "hotdog.webp"
+    console.log(foodImage.src)
+    foodImage.src = "hotdog.png"
 }
 
-foodButton.addEventListener('click', changeImage)
+//If button is clicked, execute changeImage
+foodButton.addEventListener('click',changeImage)
 
-//parent children objects
 
-//gets the first opject thats is a p tag
+//-------------------Parent and Child Objects------------
+
+//Getting the first child
+
+//Gets the first object that is a p tag
 document.querySelector('p')
 
-//getting first child
-console.log(document.getElementById("divContainer").children[0]);
 
-var divPTag = (document.getElementById("divContainer").children[0]);
+var divPTag = document.getElementById("divContainer").children[0];
 
-
-//giving the p tag in the dive the id of bacon
-divPTag.setAttribute('id','bacon')
+//Giving the P tag in the class of bigText
+divPTag.setAttribute('class','bigText')
 
 
-
+divPTag.setAttribute('style','border:1px solid black')
 var test = document.getElementById('bacon')
 
-console.log('bacon')
 
-//creating elemtnts
 var h1Element = document.createElement('h1');
-
+h1Element.innerText ="This is a new h1 tag"
 console.log(h1Element)
-divPTag.appendChild(h1Element)
+document.getElementById("divContainer").appendChild(h1Element)
 
 //Method to nuke divContainer
 function bf()
@@ -49,6 +49,7 @@ function bf()
 //Button that Executes order 66
 document.getElementById('order66').addEventListener('click',bf)
 
+
 //get all elements with the names tag
 
 var names = document.querySelectorAll('.names')
@@ -60,11 +61,13 @@ for(var i = 0; i < names.length; i++)
 }
 
 
-//Query selection \ advanced
+//Query Selection | Advanced
 
 var advanceDiv = document.getElementById("advanced")
 
-//get the children
+//Get Children
 console.log(document.querySelector("#advanced h2").innerText)
 
 console.log(document.querySelector("#advanced h2 p").innerText)
+
+console.log(document.querySelector("#advanced #generalgrevious"))
