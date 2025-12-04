@@ -24,16 +24,24 @@
 	]
 
 
-var varigetbody = document.querySelector('body');
-var tempDiv
+var vari = document.querySelector('body');
 
 for (let i=0; i<people.length; i++)
 {
 	
 	var tempDiv = document.createElement("div");
 	tempDiv.setAttribute("id", String(i));
+	tempDiv.setAttribute('class', 'border')
 
+	for(key in people[i]){
+		var tempP = document.createElement('p');
+		var textElement = document.createTextNode(people [i][key]);
+		tempP.appendChild(textElement)
+		tempDiv.appendChild(tempP)
+	}
+	vari.appendChild(tempDiv)
 }
+
 
 
 
